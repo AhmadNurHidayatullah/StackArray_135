@@ -21,9 +21,25 @@ public:
         top++; //step 2
         stack_array[top] = element; //step 3
         cout << endl;
-        cout << element << "ditambahkan(pushed)." << endl;
+        cout << element << "ditambahkan(pushed)" << endl;
 
         return element;
+    }
+
+    void pop() {
+        if (empty()) { //step 1
+            cout << "\n stack is empty. cannot pop." << endl; //1.a
+            return; //1.b
+        }
+
+        cout << "\n the popped element is: " << stack_array[top] << endl;
+        top--; //step decrement
+    }
+
+    //method for check if data is empty
+    bool empty() {
+        return (top == -1);
+
     }
 };
 int main()
