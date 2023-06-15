@@ -70,7 +70,10 @@ int main()
         cout << "\nenter your choice: ";
         string input;
         getline(cin, input);
-        char ch = (input.empty);
+        char ch = (input.empty() ? '0' : input[0]);
+        switch (ch) {
+
+        }
     }
 }
 
