@@ -47,12 +47,17 @@ public:
             cout << "\nstack is empty." << endl;
 
         }
-        
+        else {
+            for (int tmp = 0; tmp <= top; tmp++) {
+                cout << stack_array[tmp] << endl;
+            }
+        }
     }
 };
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    
 }
 
 
