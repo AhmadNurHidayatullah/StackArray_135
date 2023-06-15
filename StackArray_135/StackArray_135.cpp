@@ -15,7 +15,10 @@ public:
     void push() {
         if (top == 4) {//step 1
             cout << "number of data exceeds the limit." << endl;
+            return;
         }
+
+        top++;
 
         cout << "\nenter a element: ";
         string element;
@@ -72,7 +75,13 @@ int main()
         getline(cin, input);
         char ch = (input.empty() ? '0' : input[0]);
         switch (ch) {
-
+        case '1': {
+            cout << "\nenter a element: ";
+            string element;
+            getline(cin, element);
+            s.push();
+            break;
+        }
         }
     }
 }
