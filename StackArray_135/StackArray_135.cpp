@@ -57,7 +57,7 @@ public:
 
 int main()
 {
-    
+    stackArray s;
 }
 
 
